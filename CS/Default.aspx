@@ -12,23 +12,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <dxwgv:ASPxGridView ID="ASPxGridView1" runat="server" 
-            AutoGenerateColumns="False" DataSourceID="SqlDataSource1" 
-            oncustomcolumndisplaytext="ASPxGridView1_CustomColumnDisplayText">
+        <dxwgv:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" onCustomColumnDisplayText="ASPxGridView1_CustomColumnDisplayText">
             <Columns>
-                <dxwgv:GridViewDataTextColumn Caption="№" ReadOnly="True" UnboundType="String" 
-                    VisibleIndex="0">
-                    <Settings AllowAutoFilter="False" AllowAutoFilterTextInputTimer="False" 
-                        AllowDragDrop="False" AllowGroup="False" AllowHeaderFilter="False" 
-                        AllowSort="False" />
-                </dxwgv:GridViewDataTextColumn>
-<dxwgv:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="1"></dxwgv:GridViewDataTextColumn>
-                <dxwgv:GridViewDataTextColumn FieldName="UnitPrice" VisibleIndex="2">
+                <dxwgv:GridViewDataTextColumn Caption="#" UnboundType="String" />
+                <dxwgv:GridViewDataTextColumn FieldName="ProductName" />
+                <dxwgv:GridViewDataTextColumn FieldName="UnitPrice">
+                    <PropertiesTextEdit DisplayFormatString="c" />
                 </dxwgv:GridViewDataTextColumn>
             </Columns>
         </dxwgv:ASPxGridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-            ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>" 
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:NorthwindConnectionString %>" 
             SelectCommand="SELECT [ProductName], [UnitPrice] FROM [Alphabetical list of products]">
         </asp:SqlDataSource>
     </div>
