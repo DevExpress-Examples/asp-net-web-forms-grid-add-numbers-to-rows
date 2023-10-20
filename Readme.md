@@ -15,12 +15,12 @@ This example demonstrates how to number rows (display row visible indices) in a 
 
 ## Implementation Details
 
-1. Create an unbound grid column.
+1. Create an unbound column.
 
 ```aspx
 <dxwgv:GridViewDataTextColumn Caption="#" UnboundType="String" />
 ```
-2. Handle the [CustomColumnDisplayText](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomColumnDisplayText) event to assign row visible incex to cells in the unbound column.
+2. Handle the [CustomColumnDisplayText](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomColumnDisplayText) event to assign row visible incex to cell  values in the unbound column.
 
 ```cs
 protected void ASPxGridView1_CustomColumnDisplayText(object sender, DevExpress.Web.ASPxGridViewColumnDisplayTextEventArgs e) {
