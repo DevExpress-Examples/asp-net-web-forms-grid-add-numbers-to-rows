@@ -3,12 +3,12 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# Grid View for ASP.NET Web Forms - How to number grid rows
+# Grid View for ASP.NET Web Forms - How to add numbers to grid rows
 <!-- run online -->
 **[[Run Online]](https://codecentral.devexpress.com/e1330/)**
 <!-- run online end -->
 
-This example demonstrates how to number rows (display row visible indices) in a grid.
+This example demonstrates how to add row numbers (display row visible indices) in a grid.
 
 ![](grid-with-numbered-rows.png)
 
@@ -19,7 +19,7 @@ This example demonstrates how to number rows (display row visible indices) in a 
 ```aspx
 <dxwgv:GridViewDataTextColumn Caption="#" UnboundType="String" />
 ```
-2. Handle the [CustomColumnDisplayText](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomColumnDisplayText) event to assign row visible incex to cell  values in the unbound column.
+2. Handle the [CustomColumnDisplayText](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxGridView.CustomColumnDisplayText) event to assign row visible indices to cell values in the unbound column.
 
 ```cs
 protected void ASPxGridView1_CustomColumnDisplayText(object sender, DevExpress.Web.ASPxGridViewColumnDisplayTextEventArgs e) {
