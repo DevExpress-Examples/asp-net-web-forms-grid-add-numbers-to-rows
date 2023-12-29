@@ -5,9 +5,6 @@
 <!-- default badges end -->
 
 # Grid View for ASP.NET Web Forms - How to add numbers to grid rows
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128542121/)**
-<!-- run online end -->
 
 This example demonstrates how to add row numbers (display row visible indices) in a grid.
 
